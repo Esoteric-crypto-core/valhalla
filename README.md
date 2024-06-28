@@ -2,6 +2,9 @@
 
 This repository contains a bot to automate various tasks on the Valhalla project website. The tasks include wallet binding, daily and seasonal quests, claiming points, collecting account statistics, and registering referrals.
 
+# Follow:
+https://t.me/esoteric_crypto_core
+
 # Important Notes:
 
 - The project website is currently under development. Future changes to the website may require updates to this tool.
