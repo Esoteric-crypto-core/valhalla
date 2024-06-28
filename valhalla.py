@@ -208,7 +208,7 @@ class Account(BaseClient):
 
             if int(task['quest']['endDate']) > int(time.time()) + 120:
                 if task['completed'] == False:
-                    await asyncio.sleep(SLEEP_BETWEEN_TASKS)
+                    await asyncio.sleep(random.randint(MIN_SLEEP_BETWEEN_TASKS, MAX_SLEEP_BETWEEN_TASKS))
                     data = {'questId': task['quest']
                             ["_id"], 'seasonId': self.seasonId, }
                     result = await self.request('POST', url='https://www.infinigods.com/api/mountOlympus/startQuest', key='Success', data=json.dumps(data))
