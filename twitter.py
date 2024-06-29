@@ -40,8 +40,8 @@ class Twitter:
 
     async def start(self):
         ct0, guest_id, cookies = await self._get_ct0()
-        logger.info(f"{self.idx} | ct0 was got: {ct0}")
-        logger.info(f"{self.idx} | guest id was got: {guest_id}")
+        logger.info(f"{self.idx} | ct0 was received: {ct0}")
+        logger.info(f"{self.idx} | guest id was received: {guest_id}")
         if ct0 == None:
             raise Exception
         self.cookies.update({'guest_id': guest_id})
